@@ -35,7 +35,7 @@
     height: 10vh;
     border: 0;
     outline: 0;
-    color: #141414;
-    background-color: aliceblue;
+    color: #ff0000;
+    background-color: rgb(0, 0, 0);
     font-size: 5vh;
 }
