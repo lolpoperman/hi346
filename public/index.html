@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enhanced Page</title>
         <script src="/uv/uv.bundle.js"></script>
         <script src="/uv/uv.config.js"></script>
 
@@ -17,10 +20,18 @@
         <link rel="stylesheet" href="example.css">
     </head>
     <body>
-        <input type="text" id="urlInput" placeholder="Enter URL here">
-        <button id="searchButton">Search Bar</button>
+        <!-- Top section for iframe and inputs -->
+        <div id="topSection">
+            <iframe id="iframeWindow" class="iframeWindow"></iframe>
+            <input id="urlInput" type="text" placeholder="Enter URL here">
+            <button id="searchButton">Search</button>
+        </div>
 
-        <iframe id="iframeWindow" class="iframeWindow"></iframe>
+        <!-- Rest of your website content can go here -->
+        <div>
+            <h1>Welcome to the Site</h1>
+            <p>Other content goes here...</p>
+        </div>
     </body>
     <script src="example.js"></script>
 </html>
