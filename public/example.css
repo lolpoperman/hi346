@@ -50,18 +50,13 @@ div.any {
     margin-left: 6px;
     width: 6vw; 
     height: 6vh; 
-    border: 3px solid rgba; 
-    background-color: rgb(100, 100, 100); 
+    border: 3px ; 
+    background-color: #25252a; 
     color: #ffffff; 
     font-size: 1.6vh; 
     border-radius: 9px; 
     cursor: pointer; 
     transition: background-color 0.4s, color 0.3s;
-}
-
-#searchButton:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #ffffff;
 }
 
 #urlInput:hover{
@@ -75,9 +70,8 @@ div.any {
     text-align: center;
 }
 
-#searchButton:hover{
-    padding: 9px; 
-    background-color: #a7a5a5
+#searchButton:hover{ 
+    background-color: #585858
 }
 
 
