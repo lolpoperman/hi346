@@ -41,15 +41,16 @@
 
 
 #urlInput {
-    padding: 6px; 
+    padding: 3px; 
     width: 140px;
     height: 4vh; 
     border: 3px solid rgb(63, 65, 66);
     outline: none;
     color: rgb(196, 196, 196);
     background-color: #25252a;
-    font-size: 1.6vh; 
-    border-radius: 6px; 
+    font-size: 2vh; 
+    border-radius: 50px;
+    text-align: center;
 }
 
 
@@ -62,7 +63,7 @@
     background-color: rgba(0, 0, 0, 0); 
     color: #ffffff; 
     font-size: 1.6vh; 
-    border-radius: 6px; 
+    border-radius: 9px; 
     cursor: pointer; 
     transition: background-color 0.3s, color 0.3s;
 }
@@ -75,9 +76,12 @@
 #urlInput:hover{
     background-color: #39393a;
     color: #030303;
-    padding: 7px;
+    padding: 2px;
     width: 200px; 
     color: rgb(196, 196, 196);
+    border-radius: 81px;
+    transition: all .3s ease;
+    text-align: center;
 }
 
 #searchButton:hover{
