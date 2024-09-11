@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 10vh; /* Adjust the height as needed */
+    height: 8vh; /* Reduced height for the search bar */
     background-color: #f8f8f8;
     border-bottom: 2px solid #ddd;
     display: flex;
@@ -14,27 +14,27 @@
 }
 
 #urlInput {
-    padding: 10px;
-    width: 40vw;
-    height: 6vh;
+    padding: 8px; /* Reduced padding */
+    width: 35vw; /* Adjusted width */
+    height: 5vh; /* Reduced height */
     border: 3px solid aliceblue;
     outline: none;
     color: aliceblue;
     background-color: #25252a;
-    font-size: 2vh;
-    border-radius: 10px;
+    font-size: 1.8vh; /* Reduced font size */
+    border-radius: 8px; /* Adjusted border radius */
 }
 
 #searchButton {
-    padding: 10px;
-    margin-left: 10px;
-    width: 15vw;
-    height: 6vh;
+    padding: 8px; /* Reduced padding */
+    margin-left: 8px; /* Adjusted margin */
+    width: 12vw; /* Adjusted width */
+    height: 5vh; /* Reduced height */
     border: 3px solid rgba(0, 0, 0, 0); /* Transparent border */
     background-color: rgba(0, 0, 0, 0); /* Transparent background */
     color: #ffffff; /* White text color */
-    font-size: 2vh;
-    border-radius: 10px;
+    font-size: 1.8vh; /* Reduced font size */
+    border-radius: 8px; /* Adjusted border radius */
     cursor: pointer; /* Changes the cursor on hover */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
 }
@@ -47,10 +47,10 @@
 /* The iframe positioned below the search bar */
 .iframeWindow {
     position: absolute;
-    top: 10vh; /* Start just below the search bar */
+    top: 8vh; /* Adjusted to start just below the resized search bar */
     left: 0;
     width: 100vw;
-    height: 90vh; /* Take the remaining height */
+    height: 92vh; /* Adjusted to fit the remaining space */
     border: none; /* Remove the iframe's border */
     padding: 0;
     margin: 0;
