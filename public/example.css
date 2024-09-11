@@ -58,7 +58,7 @@
     margin-left: 6px; /* Adjusted margin */
     width: 10vw; /* Adjusted width */
     height: 4vh; /* Reduced height */
-    border: 3px solid rgba(0, 0, 0, 0); /* Transparent border */
+    border: 3px solid rgba; /* Transparent border */
     background-color: rgba(0, 0, 0, 0); /* Transparent background */
     color: #ffffff; /* White text color */
     font-size: 1.6vh; /* Reduced font size */
