@@ -32,7 +32,7 @@
     height: 6vh;
     border: 3px solid rgba(0, 0, 0, 0); /* Transparent border */
     background-color: rgba(0, 0, 0, 0); /* Transparent background */
-    color: #25252a; /* Dark text color for visibility */
+    color: #ffffff; /* White text color */
     font-size: 2vh;
     border-radius: 10px;
     cursor: pointer; /* Changes the cursor on hover */
@@ -41,7 +41,7 @@
 
 #searchButton:hover {
     background-color: rgba(0, 0, 0, 0.1); /* Slightly visible background on hover */
-    color: #000000; /* Darker text color on hover */
+    color: #ffffff; /* White text color on hover */
 }
 
 /* The iframe positioned below the search bar */
