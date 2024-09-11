@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 6vh; /* Further reduced height for the search bar */
+    height: 6vh; /* Reduced height for the search bar */
     background-color: #f8f8f8;
     border-bottom: 2px solid #ddd;
     display: flex;
@@ -13,12 +13,30 @@
     z-index: 10;
 }
 
-/* Center the input field and button within the search bar */
+/* Center the input field and buttons within the search bar */
 #searchBarContent {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 90%; /* Center within the search bar */
+}
+
+/* Text button styling */
+#externalLinkButton {
+    padding: 6px;
+    margin-right: 6px; /* Space between the text button and the input field */
+    height: 4vh;
+    border: none;
+    background-color: #007bff; /* Blue background for visibility */
+    color: #ffffff; /* White text color */
+    font-size: 1.6vh; /* Adjusted font size */
+    border-radius: 6px; /* Adjusted border radius */
+    cursor: pointer; /* Changes the cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#externalLinkButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Input field styling */
