@@ -1,95 +1,109 @@
-/* Search bar section fixed at the top */
+/* Search bar section */
 #searchBar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 6vh; /* Reduced height for the search bar */
-    background-color: #050303;
-    border-bottom: 2px solid #1b1717;
+    height: 6vh; 
+    background-color: #6d6d6d;
+    border-bottom: 2px solid #030303;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
 }
 
-/* Center the input field and buttons within the search bar */
+/* Center button search */
 #searchBarContent {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%; /* Center within the search bar */
+    width: 40%; 
 }
 
-/* Text button styling */
+/* Text button style */
 #externalLinkButton {
     padding: 6px;
-    margin-right: 6px; /* Space between the text button and the input field */
+    margin-right: 6px; 
     height: 4vh;
     border: none;
-    background-color: #00356e; /* Blue background for visibility */
-    color: #ffffff; /* White text color */
-    font-size: 1.6vh; /* Adjusted font size */
-    border-radius: 6px; /* Adjusted border radius */
-    cursor: pointer; /* Changes the cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    background-color: #0012b3; 
+    color: #ffffff; 
+    font-size: 1.6vh; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
 }
 
 #externalLinkButton:hover {
-    background-color: #014b9b; /* Darker blue on hover */
+    background-color: #014b9b; 
 }
 
-/* Input field styling */
+
 #urlInput {
-    padding: 6px; /* Reduced padding */
-    width: 30vw; /* Adjusted width */
-    height: 4vh; /* Reduced height */
-    border: 3px solid aliceblue;
+    padding: 6px; 
+    width: 140px;
+    height: 4vh; 
+    border: 3px solid rgb(63, 65, 66);
     outline: none;
-    color: aliceblue;
+    color: rgb(196, 196, 196);
     background-color: #25252a;
-    font-size: 1.6vh; /* Reduced font size */
-    border-radius: 6px; /* Adjusted border radius */
+    font-size: 1.6vh; 
+    border-radius: 6px; 
 }
 
-/* Search button styling */
+
 #searchButton {
-    padding: 6px; /* Reduced padding */
-    margin-left: 6px; /* Adjusted margin */
-    width: 10vw; /* Adjusted width */
-    height: 4vh; /* Reduced height */
-    border: 3px solid rgba; /* Transparent border */
-    background-color: rgba(0, 0, 0, 0); /* Transparent background */
-    color: #ffffff; /* White text color */
-    font-size: 1.6vh; /* Reduced font size */
-    border-radius: 6px; /* Adjusted border radius */
-    cursor: pointer; /* Changes the cursor on hover */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    padding: 6px; 
+    margin-left: 6px;
+    width: 10vw; 
+    height: 4vh; 
+    border: 3px solid rgba; 
+    background-color: rgba(0, 0, 0, 0); 
+    color: #ffffff; 
+    font-size: 1.6vh; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s;
 }
 
 #searchButton:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Slightly visible background on hover */
-    color: #ffffff; /* White text color on hover */
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #ffffff;
 }
 
-/* The iframe positioned below the search bar */
+#urlInput:hover{
+    background-color: #39393a;
+    color: #030303;
+    padding: 7px;
+    width: 200px; 
+    color: rgb(196, 196, 196);
+}
+
+#searchButton:hover{
+    padding: 9px; 
+    background-color: #a7a5a5
+}
+
+
+/* The iframe the search bar */
 .iframeWindow {
     position: absolute;
-    top: 6vh; /* Adjusted to start just below the resized search bar */
+    top: 6vh; 
     left: 0;
     width: 100vw;
-    height: 94vh; /* Adjusted to fit the remaining space */
-    border: none; /* Remove the iframe's border */
+    height: 94vh; 
+    border: none; 
     padding: 0;
     margin: 0;
     display: block;
 }
 
-/* Ensure body has no padding or margins to avoid white spaces */
+/* Ensure body has no padding or margins */
 html, body {
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
-    overflow: hidden; /* Prevent scrolling */
+    overflow: hidden; 
 }
