@@ -5,8 +5,8 @@
     left: 0;
     width: 100vw;
     height: 6vh; /* Reduced height for the search bar */
-    background-color: #f8f8f8;
-    border-bottom: 2px solid #ddd;
+    background-color: #050303;
+    border-bottom: 2px solid #1b1717;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
     margin-right: 6px; /* Space between the text button and the input field */
     height: 4vh;
     border: none;
-    background-color: #007bff; /* Blue background for visibility */
+    background-color: #00356e; /* Blue background for visibility */
     color: #ffffff; /* White text color */
     font-size: 1.6vh; /* Adjusted font size */
     border-radius: 6px; /* Adjusted border radius */
@@ -36,7 +36,7 @@
 }
 
 #externalLinkButton:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #014b9b; /* Darker blue on hover */
 }
 
 /* Input field styling */
