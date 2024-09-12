@@ -1,11 +1,11 @@
 /* Search bar section */
 #searchBar {
     position: fixed;
-    top: 20%;
+    top: 50%;
     left: 50%;
-    width: 1;
+    width: 325px;
     height: 8vh; 
-    background-color: #5050509c;
+    background-color: #0a0a0a9c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +36,7 @@ div.any {
 #urlInput {
     padding: 6px; 
     width: 250px;
-    height: 4vh;
+    height: 3vh;
     border: 3px solid rgb(63, 65, 66);
     outline: none;
     color: rgb(177, 177, 177);
@@ -48,15 +48,16 @@ div.any {
 
 
 #searchButton {
-    padding: 5px; 
-    margin-left: 6px;
-    width: 7vw; 
-    height: 5.37vh; 
-    border: 2px ; 
+    padding: 6px;
+    margin-top: 1080vh;
+    margin-right: 10px;
+    width: 8vw; 
+    height: 4.75vh; 
+    border: 10px ; 
     background-color: #494949; 
-    color: #ffffff; 
+    color: aliceblue;
     font-size: 1.6vh; 
-    border-radius: 9px; 
+    border-radius: 10px; 
     cursor: pointer; 
     transition: background-color 0.4s, color 0.3s;
 }
@@ -101,12 +102,18 @@ html, body {
 
 #centeredText {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 350px;
     text-align: 2px;
     font-size: 30px;
     font-weight: bolder;
     margin-top: 20px; 
-    left: 2%;
+    left: 41%;
     z-index: 10; 
     position: relative; 
     color: rgb(255, 255, 255); 
+}
+
+#centeredText:hover {
+    margin-top: 15px;
+    transition: all .3s ease;
 }
