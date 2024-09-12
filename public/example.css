@@ -98,3 +98,15 @@ html, body {
     height: 100vh;
     overflow: hidden; 
 }
+
+#centeredText {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: 2px;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 20px; 
+    left: 2%;
+    z-index: 10; 
+    position: relative; 
+    color: rgb(255, 255, 255); 
+}
