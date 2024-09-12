@@ -45,6 +45,8 @@ div.any {
     font-size: 2vh; 
     border-radius: 10px;
     text-align: center;
+    left: 50%;
+    margin-right: px;
 }
 
 
@@ -61,6 +63,7 @@ div.any {
     border-radius: 10px; 
     cursor: pointer; 
     transition: background-color 0.4s, color 0.3s;
+    z-index: 10; 
 }
 
 #urlInput:hover{
@@ -72,6 +75,9 @@ div.any {
     border-radius: 15px;
     transition: all .3s ease;
     text-align: center;
+    left: 50%;
+    margin-right: -50%;
+    z-index: 10; 
 }
 
 #searchButton:hover{ 
@@ -103,16 +109,19 @@ html, body {
 
 #centeredText {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    top: 350px;
+    position: absolute;
     text-align: 2px;
     font-size: 30px;
     font-weight: bolder;
-    margin-top: 20px; 
-    left: 45%;
-    z-index: 10; 
-    position: relative; 
-    color: rgb(255, 255, 255); 
+    justify-content: center;
     align-items: center;
+    z-index: 10; 
+    color: rgb(255, 255, 255); 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -140%);
+    padding: 10px;
+    display: flex;
 }
 
 #centeredText:hover {
