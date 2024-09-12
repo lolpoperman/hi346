@@ -119,12 +119,29 @@ html, body {
     color: rgb(255, 255, 255); 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -140%);
+    transform: translate(-50%, -155%);
     padding: 10px;
     display: flex;
 }
 
 #centeredText:hover {
-    margin-top: 15px;
-    transition: all .3s ease;
+    color: rgb(202, 202, 202);
+    transition: all .4s ease;
+}
+
+#games {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    text-align: 2px;
+    font-size: 30px;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; 
+    color: rgb(199, 199, 199); 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -850%);
+    padding: 10px;
+    display: flex;
 }
