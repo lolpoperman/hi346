@@ -1,25 +1,33 @@
-document // makes it so you can press enter to submit as opposed to just being able to press a button
-    .getElementById("urlInput")
-    .addEventListener("keydown", function (event) {
-        if (event.key === "Enter") {
-            event.preventDefault();
-            document.getElementById("searchButton").click();
-        }
-    });
+// Allows submitting the form by pressing "Enter"
+document.getElementById("urlInput").addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+      event.preventDefault();
+      document.getElementById("searchButton").click();
+  }
+});
 
+// Handles search button click event
 document.getElementById("searchButton").onclick = function (event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    let url = document.getElementById("urlInput").value; // if no periods are detected in the input, search google instead
-    let searchUrl = "https://www.google.com/search?q=";
+  let url = document.getElementById("urlInput").value;
+  const searchUrl = "https://www.google.com/search?q=";
 
-    if (!url.includes(".")) {
-        url = searchUrl + encodeURIComponent(url);
-    } else {
-        if (!url.startsWith("http://") && !url.startsWith("https://")) { // if no http or https is detected, add https automatically
-            url = "https://" + url;
-        }
-    }
+  // If no periods are detected in the input, search Google instead
+  if (!url.includes(".")) {
+      url = searchUrl + encodeURIComponent(url);
+  } else {
+      // If no http:// or https:// is detected, prepend https://
+      if (!url.startsWith("http://") && !url.startsWith("https://")) {
+          url = "https://" + url;
+      }
+  }
 
-    iframeWindow.src = __uv$config.prefix + __uv$config.encodeUrl(url);
+  // Ensure that __uv$config exists before using it
+  if (typeof __uv$config !== "undefined" && __uv$config.encodeUrl) {
+      document.getElementById("iframeWindow").src = __uv$config.prefix + __uv$config.encodeUrl(url);
+  } else {
+      // Fallback if __uv$config is undefined or improperly set
+      document.getElementById("iframeWindow").src = url;
+  }
 };
