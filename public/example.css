@@ -1,170 +1,46 @@
-/* Search bar section */
-#searchBar {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 30vh;
-    height: 8vh; 
-    background-color: #0a0a0a9c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-}
-
-div.any {
+.iframeWindow {
     position: absolute;
-    top: 0;
+    width: 100vw;
+    height: 90vh;
+    border: 0;
+    padding: 0;
+    margin: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url();
-
-}
-
-/* Center button search */
-#searchBarContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 4%; 
-    text-align: center;
+    bottom: 0;
+    background-color: #141414;
 }
 
 #urlInput {
-    padding: 6px; 
-    width: 250px;
-    height: 3vh;
-    margin-left: 66px;
-    border: 3px solid rgb(63, 65, 66);
-    outline: none;
-    color: rgb(177, 177, 177);
+    position: absolute;
+    padding: 0em;
+    padding-left: 0.5em;
+    margin: 0;
+    left: 0;
+    top: 0;
+    width: 80vw;
+    height: 10vh;
+    border: 0;
+    outline: 0;
+    color: aliceblue;
     background-color: #25252a;
-    font-size: 2vh; 
-    border-radius: 10px;
-    text-align: center;
-    left: 50%;
-    margin-right: px;
+    font-size: 5vh;
 }
-
 
 #searchButton {
-    padding: 6px;
-    margin-top: 1vh;
-    margin-right: 10px;
-    width: 8vw; 
-    height: 4.75vh; 
-    border: 10px ; 
-    background-color: #494949; 
-    color: aliceblue;
-    font-size: 1.6vh; 
-    border-radius: 10px; 
-    cursor: pointer; 
-    transition: background-color 0.4s, color 0.3s;
-    z-index: 10; 
-}
-
-#urlInput:hover{
-    background-color: #39393a;
-    color: #000000;
-    padding: 6px;
-    width: px; 
-    color: rgb(196, 196, 196);
-    border-radius: 15px;
-    transition: all .3s ease;
-    text-align: center;
-    left: 50%;
-    margin-right: -50%;
-    z-index: 10; 
-}
-
-#searchButton:hover{ 
-    background-color: #585858
-}
-
-
-/* The iframe the search bar */
-.iframeWindow {
     position: absolute;
-    top: 6vh; 
-    left: 10;
-    width: 100vw;
-    height: 94vh; 
-    border: none; 
-    padding: 0;
     margin: 0;
-    display: block;
-}
-
-/* Ensure body has no padding or margins */
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden; 
-}
-
-#centeredText {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: absolute;
-    text-align: 2px;
-    font-size: 30px;
-    font-weight: bolder;
-    justify-content: center;
-    align-items: center;
-    z-index: 10; 
-    color: rgb(255, 255, 255); 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -155%);
-    padding: 10px;
-    display: flex;
-}
-
-#centeredText:hover {
-    color: rgb(202, 202, 202);
-    transition: all .4s ease;
-}
-
-#games {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: absolute;
-    text-align: 2px;
-    font-size: 30px;
-    font-weight: bolder;
-    justify-content: center;
-    align-items: center;
-    z-index: 10; 
-    color: rgb(199, 199, 199); 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -850%);
-    padding: 10px;
-    display: flex;
-    border: #585858;
-}
-
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    right: 0;
     top: 0;
-    left: 0;
-    z-index: -1; /* Ensure it stays behind other content */
-  }
+    width: 20vw;
+    height: 10vh;
+    border: 0;
+    outline: 0;
+    color: #141414;
+    background-color: aliceblue;
+    font-size: 5vh;
+}
 
-  body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #30475a;
-    overflow: hidden; /* Prevent scrollbars */
-    position: relative; /* Allow absolute positioning */
-  }
+#switcher {
+    position: absolute;
+    z-index: 999;
+}
