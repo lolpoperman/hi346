@@ -41,12 +41,12 @@ div.any {
     margin-left: px;
     border: 3px solid rgb(63, 65, 66);
     outline: none;
-    color: rgb(177, 177, 177);
+    color: rgb(161, 161, 161);
     background-color: #25252a;
     font-size: 2vh; 
     border-radius: 10px;
-    text-align: center;
     left: 40%;
+    text-align: center;
     margin-right: px;
 }
 
@@ -67,10 +67,14 @@ div.any {
     z-index: 10; 
 }
 
-#urlInput:hover{
+#urlInput:focus{
     background-color: #323238;
     color: #000000;
-
+    width: 815px;
+    height: 30px;
+    text-align: 1;
+    text-align:left;
+    transition: all .4s ease;
 }
 
 #searchButton:hover{ 
@@ -131,3 +135,15 @@ body {
     background-color: #30475a;
     overflow-x: hidden;
  }
+
+ .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
