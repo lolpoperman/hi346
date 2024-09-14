@@ -1,0 +1,33 @@
+#realText {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    text-align: 2px;
+    font-size: 30px;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; 
+    color: rgb(255, 255, 255); 
+    top: 9%;
+    left: 50%;
+    transform: translate(-226%, -155%);
+    padding: 10px;
+    display: flex;
+}
+
+#realText:hover {
+    margin-top: 3px;
+    color: rgb(226, 226, 226);
+    transition: all .1s ease-in;
+}
+
+body {
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    overflow-x: hidden;
+ }
+
