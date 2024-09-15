@@ -31,3 +31,59 @@ body {
     overflow-x: hidden;
  }
 
+        /* Grid container for the icons */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); /* Six equal columns */
+            gap: 22px; /* Space between the icons */
+            justify-items: start; /* Align items to the left */
+            margin-top: 80px;
+            margin-right: 300px;
+          }
+  
+          /* Container for each icon and its tooltip */
+          .icon-container {
+            width: 100px; /* Fixed width for each icon */
+            max-width: 100px;
+            position: relative;
+            box-sizing: border-box;
+          }
+  
+          /* Style for the icons */
+          .icon {
+            width: 100%; /* Full width of the container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 15px; /* Rounded corners */
+            transition: transform 0.3s ease;
+          }
+  
+          .icon:hover {
+            transform: scale(1.1); /* Slight zoom on hover */
+          }
+
+
+          .centeredText {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: absolute;
+            text-align: 2px;
+            font-size: 30px;
+            font-weight: bolder;
+            justify-content: center;
+            align-items: center;
+            z-index: 10; 
+            color: rgb(255, 255, 255); 
+            top: 9%;
+            left: 70%;
+            transform: translate(-295%, -155%);
+            padding: 10px;
+            display: flex;
+        }
+        
+        #centeredText:hover {
+            color: rgb(202, 202, 202);
+            transition: all .4s ease;
+        }
+
+        .sigmaText {
+            color: #000000;
+        }
