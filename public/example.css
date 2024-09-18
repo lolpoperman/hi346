@@ -3,7 +3,7 @@
     top: 50%;
     left: 50%;
     width: 30vh;
-    height: 8vh; 
+    height: 7vh; 
     background-color: #0000009c;
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@ div.any {
 }
 
 #urlInput {
-    padding: 6px; 
+    padding: 4px; 
     width: 800px;
     height: 3vh;
     margin-left: px;
@@ -47,7 +47,7 @@ div.any {
     left: 40%;
     text-align: center;
     margin-right: px;
-    margin-top: 0;
+    margin-bottom: 25px;
 }
 
 
@@ -106,20 +106,22 @@ html, body {
 
 #centeredText {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: absolute;
-    text-align: 2px;
+    text-align: center; /* Corrected text alignment */
+    padding: 1px 2px;
     font-size: 30px;
     font-weight: bolder;
-    justify-content: center;
+    justify-content: center; /* These will work with flex */
     align-items: center;
     z-index: 10; 
     color: rgb(255, 255, 255); 
-    top: 9%;
-    left: 50%;
-    transform: translate(-295%, -155%);
-    padding: 10px;
+    margin-top: 0; /* Adjust this if needed */
     display: flex;
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-1090%, -1140%); /* Center the div exactly in the middle */
 }
+
 
 #centeredText:hover {
     color: rgb(202, 202, 202);
@@ -136,5 +138,29 @@ body {
     overflow-x: hidden;
  }
 
+ #among-us-button {
+    padding: 1px 2px;
+    font-size: 20px;
+    font: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    cursor: pointer;
+    height: 40px; /* Set specific height */
+    width: auto;  /* Ensure width adjusts based on content */
+    margin-left: 159px;
+    transform: translate(580%, 100%);
+    border: #000000;
+}
 
+#among-us-button:hover {
+    background-color: #131313;
+    border-radius: 7px;
+}
+
+#among-us-button:focus {
+    background-color: #2c2c2c;
+    border-radius: 7px;
+    transition: all .8 ease;
+}
  
