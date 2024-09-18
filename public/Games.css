@@ -64,8 +64,8 @@ body {
 
 .centeredText {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  position: fixed; /* Fix the position at the top */
-  bottom: 780px; /* Position near the top */
+  position: fixed; /* Fix the position */
+  top: -10px; /* Adjust this value to move it higher */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Offset to center it exactly */
   font-size: 30px;
@@ -76,10 +76,11 @@ body {
   padding: 10px;
 }
 
-#centeredText:hover {
+.centeredText:hover {
   color: rgb(202, 202, 202);
   transition: all .4s ease;
 }
+
 
 .sigmaText {
   color: #000000;
