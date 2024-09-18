@@ -87,3 +87,7 @@ body {
         .sigmaText {
             color: #000000;
         }
+
+        #tooltip {
+          margin-top: 100pz;
+        }

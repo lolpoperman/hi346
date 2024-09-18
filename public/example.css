@@ -137,22 +137,4 @@ body {
  }
 
 
- #among-us-button {
-    padding: 1px 2px;
-    font-size: 20px;
-    font: bolder;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(255, 255, 255);
-    background-color: #000000;
-    cursor: pointer;
-    height: 30px; /* Set specific height */
-    width: auto;  /* Ensure width adjusts based on content */
-    margin-left: 159px;
-    transform: translate(580%, 117%);
-    border: #000000;
-}
-
-#among-us-button:hover {
-    background-color: #131313;
-    border-radius: 2px;
-}
+ 
