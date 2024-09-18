@@ -4,15 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games</title>
-
     <link rel="stylesheet" href="Games.css">
-</head>
-<body> 
-    <div class="divider"></div> 
-</style>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- Particles.js Library -->
+    <style>
+        /* Fullscreen particles background */
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Keep it behind all content */
+        }
 
-</style>
-    <a href="https://hi346.vercel.app/" class="centeredText">Beezee Network | Home</a>
+
+        .tooltip {
+            position: absolute;
+            bottom: 0; /* Place the tooltip text at the bottom of the icon */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            width: 100%; /* Make the tooltip text the same width as the icon */
+            text-align: center;
+            box-sizing: border-box;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease;
+            opacity: 1; /* Show the tooltip on hover */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div> <!-- Particles container -->
+
+    <div class="divider"></div> 
+    <a href="https://hi346.vercel.app/" class="centeredText">Beezee Network | Games</a>
 
     <div class="container">
         <div class="icon-container">
@@ -35,21 +65,135 @@
         </div>
         <div class="icon-container">
             <a href="games/1v1lol.html">
-                <img src="images/resized_image_300x300.png" alt="Drive Mad" class="icon">
+                <img src="images/1v1.lol.png" alt="1V1LOL" class="icon">
+            </a>
+            <div class="tooltip">1v1.lol</div>
+        </div>
+        <div class="icon-container">
+            <a href="games/bitlife.html">
+                <img src="images/bitlifesigma.png" alt="Stickman Hook" class="icon">
+            </a>
+            <div class="tooltip">BitLife 18+</div>
+        </div>
+        <div class="icon-container">
+            <a href="games/DriveMad.html">
+                <img src="images/Drivemad.png" alt="Stickman Hook" class="icon">
             </a>
             <div class="tooltip">Drive Mad</div>
         </div>
         <div class="icon-container">
-            <a href="games/bitlife.html">
-                <img src="images/flappy-bird-icon.png" alt="Stickman Hook" class="icon">
+            <a href="games/GeoDash.html">
+                <img src="images/bitlifesigma.png" alt="Stickman Hook" class="icon">
             </a>
             <div class="tooltip">Stickman Hook</div>
         </div>
-    </style>
-        
-    </style>
-</body>
-<body>
-    
+        <div class="icon-container">
+            <a href="games/bitlife.html">
+                <img src="images/bitlifesigma.png" alt="Stickman Hook" class="icon">
+            </a>
+            <div class="tooltip">Stickman Hook</div>
+        </div>
+        <div class="icon-container">
+            <a href="games/bitlife.html">
+                <img src="images/bitlifesigma.png" alt="Stickman Hook" class="icon">
+            </a>
+            <div class="tooltip">Stickman Hook</div>
+        </div>
+        <div class="icon-container">
+            <a href="games/bitlife.html">
+                <img src="images/bitlifesigma.png" alt="Stickman Hook" class="icon">
+            </a>
+            <div class="tooltip">Stickman Hook</div>
+        </div>
+        <div class="icon-container">
+            <a href="games/bitlife.html">
+                <img src="images/bitlifesigma.png" alt="Stickman Hook" class="icon">
+            </a>
+            <div class="tooltip">Stickman Hook</div>
+        </div>
+        <!-- More icons as needed -->
+    </div>
+
+    <script>
+      /* Initialize particles.js */
+      particlesJS("particles-js", {
+        "particles": {
+          "number": {
+            "value": 200,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#ffffff"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            }
+          },
+          "opacity": {
+            "value": 1,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "move": {
+            "enable": true,
+            "speed": 2,
+            "direction": "bottom",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "repulse"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            }
+          },
+          "modes": {
+            "repulse": {
+              "distance": 100,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            }
+          }
+        },
+        "retina_detect": true
+      });
+    </script>
 </body>
 </html>

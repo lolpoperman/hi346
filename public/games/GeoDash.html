@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beezee network</title>
+
+    <link rel="stylesheet" href="Games.css">
+    <style>
+        /* Container for the header section, including the home button, label, and background */
+        .header {
+            position: fixed; /* Make the header fixed so it doesn't scroll */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #333; /* Slightly lighter black */
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+        }
+
+        /* Style for the home button */
+        .home-btn {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px 20px;
+            background-color: #484848;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .home-btn:hover {
+            background-color: #616161;
+        }
+
+        /* Style for the label next to the home button */
+        .label {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-left: 15px;
+        }
+
+        .label:hover {
+            color: rgb(212, 212, 212);
+            transition: all .4s;
+        }
+
+
+        /* Horizontal line under the header */
+        .divider {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            z-index: 998;
+        }
+
+        /* Style to ensure the iframe starts below the header */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        iframe {
+            position: absolute;
+            top: 62px; /* Start below the header and the divider */
+            left: 0;
+            width: 100%;
+            height: calc(100% - 62px); /* Adjust the height so the iframe fills the rest of the screen */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="header">
+       
+        <button class="home-btn" onclick="window.location.href='https://hi346.vercel.app/'">
+            Home
+        </button>
+
+        
+        <div class="label">
+            Beezee Network
+        </div>
+    </div>
+
+    
+    <div class="divider"></div>
+
+   
+    <iframe src="https://lolpoperman.github.io/beezee-network-games-assets/geodash/">
+        Browser does not support Iframes
+    </iframe>
+
+</body>
+</html>

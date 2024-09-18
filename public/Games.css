@@ -1,93 +1,101 @@
 #realText {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: absolute;
-    text-align: 2px;
-    font-size: 30px;
-    font-weight: bolder;
-    justify-content: center;
-    align-items: center;
-    z-index: 10; 
-    color: rgb(255, 255, 255); 
-    top: 9%;
-    left: 50%;
-    transform: translate(-226%, -155%);
-    padding: 10px;
-    display: flex;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  text-align: 2px;
+  font-size: 30px;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; 
+  color: rgb(255, 255, 255); 
+  top: 9%;
+  left: 50%;
+  transform: translate(-226%, -155%);
+  padding: 10px;
+  display: flex;
 }
 
 #realText:hover {
-    margin-top: 3px;
-    color: rgb(226, 226, 226);
-    transition: all .1s ease-in;
+  margin-top: 3px;
+  color: rgb(226, 226, 226);
+  transition: all .1s ease-in;
 }
 
 body {
-    height: 12vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #000000;
-    overflow-x: hidden;
- }
+  min-height: 100vh; /* Ensure full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #000000;
+  overflow-x: hidden;
+}
 
-        /* Grid container for the icons */
-        .container {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr); /* Six equal columns */
-            gap: 22px; /* Space between the icons */
-            justify-items: start; /* Align items to the left */
-            margin-top: 80px;
-            margin-right: 300px;
-          }
-  
-          /* Container for each icon and its tooltip */
-          .icon-container {
-            width: 100px; /* Fixed width for each icon */
-            max-width: 100px;
-            position: relative;
-            box-sizing: border-box;
-          }
-  
-          /* Style for the icons */
-          .icon {
-            width: 100%; /* Full width of the container */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 15px; /* Rounded corners */
-            transition: transform 0.3s ease;
-          }
-  
-          .icon:hover {
-            transform: scale(1.1); /* Slight zoom on hover */
-          }
+/* Grid container for the icons */
+.container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* 10 icons per row */
+  gap: 10px; /* Space between icons */
+  justify-items: center;
+  margin-top: 10px;
+  padding: 20px; /* Add padding for spacing */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  max-height: 400px; /* Set the maximum height */
+}
 
+/* Container for each icon and its tooltip */
+.icon-container {
+  width: 100px; /* Fixed width for each icon */
+  position: relative;
+  box-sizing: border-box;
+}
 
-          .centeredText {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            position: absolute;
-            text-align: 2px;
-            font-size: 30px;
-            font-weight: bolder;
-            justify-content: center;
-            align-items: center;
-            z-index: 10; 
-            color: rgb(255, 255, 255); 
-            top: 9%;
-            left: 70%;
-            transform: translate(-295%, -155%);
-            padding: 10px;
-            display: flex;
-        }
-        
-        #centeredText:hover {
-            color: rgb(202, 202, 202);
-            transition: all .4s ease;
-        }
+/* Style for the icons */
+.icon {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 15px; /* Rounded corners */
+  transition: transform 0.3s ease;
+}
 
-        .sigmaText {
-            color: #000000;
-        }
+.icon:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
 
-        #tooltip {
-          margin-top: 100pz;
-        }
+.centeredText {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: fixed; /* Fix the position at the top */
+  bottom: 780px; /* Position near the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Offset to center it exactly */
+  font-size: 30px;
+  font-weight: bolder;
+  z-index: 10; 
+  color: rgb(255, 255, 255); 
+  text-align: center;
+  padding: 10px;
+}
+
+#centeredText:hover {
+  color: rgb(202, 202, 202);
+  transition: all .4s ease;
+}
+
+.sigmaText {
+  color: #000000;
+}
+
+#tooltip {
+  position: absolute;
+  bottom: -25px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  visibility: visible;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
