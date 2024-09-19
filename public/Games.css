@@ -6,8 +6,8 @@
   font-weight: bolder;
   justify-content: center;
   align-items: center;
-  z-index: 10; 
-  color: rgb(255, 255, 255); 
+  z-index: 10;
+  color: rgb(255, 255, 255);
   top: 9%;
   left: 50%;
   transform: translate(-226%, -155%);
@@ -28,19 +28,19 @@ body {
   align-items: center;
   justify-content: flex-start;
   background-color: #000000;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-y: visible; /* Ensure vertical overflow is visible */
 }
 
 /* Grid container for the icons */
 .container {
   display: grid;
   grid-template-columns: repeat(10, 1fr); /* 10 icons per row */
-  gap: 10px; /* Space between icons */
+  gap: 40px; /* Space between icons */
   justify-items: center;
   margin-top: 10px;
-  padding: 20px; /* Add padding for spacing */
-  overflow-y: auto; /* Allow scrolling if content overflows */
-  max-height: 400px; /* Set the maximum height */
+  padding: 2px; /* Add padding for spacing */
+  overflow: visible; /* Remove scrolling and allow the container to grow */
 }
 
 /* Container for each icon and its tooltip */
@@ -48,6 +48,7 @@ body {
   width: 100px; /* Fixed width for each icon */
   position: relative;
   box-sizing: border-box;
+  background-color: transparent; /* Remove the background color */
 }
 
 /* Style for the icons */
@@ -56,10 +57,13 @@ body {
   height: auto; /* Maintain aspect ratio */
   border-radius: 15px; /* Rounded corners */
   transition: transform 0.3s ease;
+  background-color: #b3b3b3; /* Icon background */
+  box-shadow: 0 0 15px rgba(179, 179, 179, 0.7); /* Larger background effect */
 }
 
 .icon:hover {
   transform: scale(1.1); /* Slight zoom on hover */
+  transition: transform 0.3s ease;
 }
 
 .centeredText {
@@ -70,8 +74,8 @@ body {
   transform: translateX(-50%); /* Offset to center it exactly */
   font-size: 30px;
   font-weight: bolder;
-  z-index: 10; 
-  color: rgb(255, 255, 255); 
+  z-index: 10;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 10px;
 }
@@ -81,13 +85,11 @@ body {
   transition: all .4s ease;
 }
 
-
 .sigmaText {
   color: #000000;
 }
 
 #tooltip {
-  position: absolute;
   bottom: -25px; /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
@@ -99,4 +101,20 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease;
   white-space: nowrap;
+}
+
+.home-btn {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 6px 2px;
+  background-color: #b3b3b3;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transform: translate(-430%, -16%);
+}
+
+.home-btn:hover {
+  background-color: #616161;
 }

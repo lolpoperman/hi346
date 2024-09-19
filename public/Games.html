@@ -20,12 +20,11 @@
 
         .tooltip {
             position: absolute;
-            bottom: 0; /* Place the tooltip text at the bottom of the icon */
+            top: 100px; /* Place the tooltip text at the bottom of the icon */
             left: 50%;
             transform: translateX(-50%);
-            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
             color: white;
-            padding: 5px;
+            padding: 4px;
             border-radius: 5px;
             width: 100%; /* Make the tooltip text the same width as the icon */
             text-align: center;
@@ -33,6 +32,13 @@
             opacity: 0; /* Initially hidden */
             transition: opacity 0.3s ease;
             opacity: 1; /* Show the tooltip on hover */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .tooltip:hover {
+          transform: translateX(-65%);
+          color: rgb(175, 175, 175);
+          transition: all .3s ease;
         }
 
 
@@ -40,6 +46,10 @@
 </head>
 <body>
     <div id="particles-js"></div> <!-- Particles container -->
+
+    <button class="home-btn" onclick="window.location.href='https://hi346.vercel.app/'">
+      Home
+  </button>
 
     <div class="divider"></div> 
     <a href="https://hi346.vercel.app/" class="centeredText">Beezee Network | Games</a>
