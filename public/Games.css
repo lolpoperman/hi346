@@ -1,18 +1,15 @@
 #realText {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: absolute;
-  text-align: 2px;
   font-size: 30px;
   font-weight: bolder;
-  justify-content: center;
-  align-items: center;
   z-index: 10;
   color: rgb(255, 255, 255);
-  top: 9%;
+  top: 0; /* Move it to the very top */
   left: 50%;
-  transform: translate(-226%, -155%);
+  transform: translateX(-50%); /* Only horizontally center it */
   padding: 10px;
-  display: flex;
+  text-align: center;
 }
 
 #realText:hover {
@@ -22,25 +19,25 @@
 }
 
 body {
-  min-height: 100vh; /* Ensure full height of the viewport */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   background-color: #000000;
-  overflow-x: hidden; /* Prevent horizontal overflow */
-  overflow-y: visible; /* Ensure vertical overflow is visible */
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 /* Grid container for the icons */
 .container {
   display: grid;
-  grid-template-columns: repeat(10, 1fr); /* 10 icons per row */
-  gap: 40px; /* Space between icons */
+  grid-template-columns: repeat(10, 1fr); /* 10 icons per row on larger screens */
+  gap: 25px; /* Space between icons */
   justify-items: center;
   margin-top: 10px;
-  padding: 2px; /* Add padding for spacing */
-  overflow: visible; /* Remove scrolling and allow the container to grow */
+  padding: 2px;
+  overflow: visible;
 }
 
 /* Container for each icon and its tooltip */
@@ -48,30 +45,29 @@ body {
   width: 100px; /* Fixed width for each icon */
   position: relative;
   box-sizing: border-box;
-  background-color: transparent; /* Remove the background color */
 }
 
 /* Style for the icons */
 .icon {
-  width: 100%; /* Full width of the container */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 15px; /* Rounded corners */
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
   transition: transform 0.3s ease;
-  background-color: #b3b3b3; /* Icon background */
-  box-shadow: 0 0 15px rgba(179, 179, 179, 0.7); /* Larger background effect */
+  background-color: #b3b3b3;
+  box-shadow: 0 0 15px rgba(179, 179, 179, 0.7);
 }
 
 .icon:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
+  transform: scale(1.1);
   transition: transform 0.3s ease;
 }
 
 .centeredText {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  position: fixed; /* Fix the position */
-  top: -10px; /* Adjust this value to move it higher */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Offset to center it exactly */
+  position: fixed;
+  top: 0; /* Move to the very top */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
   font-size: 30px;
   font-weight: bolder;
   z-index: 10;
@@ -90,7 +86,7 @@ body {
 }
 
 #tooltip {
-  bottom: -25px; /* Adjust as needed */
+  bottom: -25px;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.7);
@@ -117,4 +113,49 @@ body {
 
 .home-btn:hover {
   background-color: #616161;
+}
+
+/* Responsive Media Queries */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Adjust column size on tablets */
+    gap: 15px;
+  }
+
+  .icon-container {
+    width: 80px;
+  }
+
+  #realText {
+    font-size: 24px;
+    transform: translate(-50%, -40%);
+  }
+
+  .centeredText {
+    font-size: 24px;
+    top: 10%;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Adjust column size for mobile */
+    gap: 10px;
+  }
+
+  .icon-container {
+    width: 60px;
+  }
+
+  #realText {
+    font-size: 20px;
+  }
+
+  .centeredText {
+    font-size: 20px;
+    top: 12%;
+  }
 }
